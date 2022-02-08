@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="Loginpage.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+    <style type="text/css">
+        .auto-style1 {
+            width: 698px;
+            height: 204px;
+            background-color: #804040;
+        }
+        .auto-style4 {
+            width: 168px;
+        }
+        .auto-style5 {
+            width: 140px;
+        }
+        .auto-style6 {
+            width: 140px;
+            height: 45px;
+        }
+        .auto-style7 {
+            width: 168px;
+            height: 45px;
+        }
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="LOGIN" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#FF8080" Text="STUDENT LOGIN PAGE" Width="394px" OnClick="LOGIN_Click" />
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <table align="center" class="auto-style1">
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    <asp:Label ID="USERNAME0" runat="server" Font-Size="Larger" Text="USERNAME"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="txtUsername" runat="server" Height="30px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    <asp:Label ID="PASSWORD0" runat="server" Font-Size="Larger" Text="PASSWORD"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="txtPassword" runat="server" Height="36px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <asp:Button ID="btnlogin" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="Fuchsia" OnClick="Button2_Click" Text="LOGIN" Width="215px" />
+                </td>
+                <td class="auto-style7"></td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:Label ID="lblErrorMessage" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="Red" Text="Incorrect User Credentials"></asp:Label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
